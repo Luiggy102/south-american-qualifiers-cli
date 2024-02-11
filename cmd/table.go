@@ -9,7 +9,7 @@ import (
 
 func PrintTable(t t.Table) {
 	title := color.New(color.FgWhite, color.Bold).Add(color.Underline)
-	title.Println("World Cup Qualifying - South America Table")
+	title.Println("\nWorld Cup Qualifying - South America Table")
 
 	fmt.Printf("%-2s %s \t%-3s %-3s %-3s %-3s %-3s %-3s \n", "", "Teams", "P", "W", "D", "L", "GD", "PTS")
 
@@ -18,25 +18,115 @@ func PrintTable(t t.Table) {
 			v.Position, v.Country, v.MatchesPlayes, v.Won, v.Draw, v.Losses, v.GoalDifference, v.Points)
 		switch v.Position {
 		case "1":
-			color.Green(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Green(info)
+			case "La posición ha subido":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "2":
-			color.Green(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Green(info)
+			case "La posición ha subido":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "3":
-			color.Green(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Green(info)
+			case "La posición ha subido":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "4":
-			color.Green(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Green(info)
+			case "La posición ha subido":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "5":
-			color.Green(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Green(info)
+			case "La posición ha subido":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "6":
-			color.Green(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Green(info)
+			case "La posición ha subido":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgGreen).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "7":
-			color.White(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.White(info)
+			case "La posición ha subido":
+				color.New(color.FgWhite).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgWhite).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "8":
-			color.Red(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Red(info)
+			case "La posición ha subido":
+				color.New(color.FgRed).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgRed).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "9":
-			color.Red(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Red(info)
+			case "La posición ha subido":
+				color.New(color.FgRed).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgRed).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		case "10":
-			color.Red(info)
+			switch v.Changes {
+			case "No hay cambios en la posición":
+				color.Red(info)
+			case "La posición ha subido":
+				color.New(color.FgRed).PrintfFunc()("%s", info)
+				color.Cyan("↑")
+			case "La posición ha bajado":
+				color.New(color.FgRed).PrintfFunc()("%s", info)
+				color.Cyan("↓")
+			}
 		}
 	}
 }

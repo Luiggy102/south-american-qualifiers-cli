@@ -9,6 +9,7 @@ type Table struct {
 		Won            string `json:"won"`
 		Draw           string `json:"tied"`
 		Losses         string `json:"losses"`
+		Changes        string `json:"label"`
 		GoalDifference string `json:"goal_difference"`
 	} `json:"results"`
 }
