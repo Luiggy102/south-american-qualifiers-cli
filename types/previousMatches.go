@@ -2,7 +2,7 @@ package types
 
 import "time"
 
-type Played struct {
+type PreviousMatches struct {
 	Matchday6 []struct {
 		FirstTeam struct {
 			Country string `json:"country"`

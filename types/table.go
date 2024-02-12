@@ -5,7 +5,7 @@ type Table struct {
 		Country        string `json:"country"`
 		Position       string `json:"position"`
 		Points         string `json:"points"`
-		MatchesPlayes  string `json:"matches_played"`
+		MatchesPlayed  string `json:"matches_played"`
 		Won            string `json:"won"`
 		Draw           string `json:"tied"`
 		Losses         string `json:"losses"`

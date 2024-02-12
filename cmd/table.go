@@ -15,7 +15,7 @@ func PrintTable(t t.Table) {
 
 	for _, v := range t.Positions {
 		info := fmt.Sprintf("%-2s %s \t%-3s %-3s %-3s %-3s %-3s %-3s ",
-			v.Position, v.Country, v.MatchesPlayes, v.Won, v.Draw, v.Losses, v.GoalDifference, v.Points)
+			v.Position, v.Country, v.MatchesPlayed, v.Won, v.Draw, v.Losses, v.GoalDifference, v.Points)
 		switch v.Position {
 		case "1":
 			switch v.Changes {
