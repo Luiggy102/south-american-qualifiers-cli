@@ -9,7 +9,7 @@ import (
 	t "github.com/Luigy102/south-american-qualifiers-cli/types"
 )
 
-func previousMatches() t.PreviousMatches {
+func PreviousMatches() t.PreviousMatches {
 	url := "https://conmebol-api.vercel.app/api/results"
 	res, err := http.Get(url)
 	e.Check(err)

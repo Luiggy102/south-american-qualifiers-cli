@@ -7,7 +7,10 @@ import (
 	"github.com/fatih/color"
 )
 
+// function to show fixture of a specified team
+// --fixture `team`
 func TeamFixture(t string, m m.NextMatches) {
+	// title formated
 	title := color.New(color.FgWhite, color.Bold).Add(color.Underline)
 	dateFormat := "Mon 02 Jan 2006"
 
@@ -19,7 +22,7 @@ func TeamFixture(t string, m m.NextMatches) {
 	}
 	for _, v := range m.Matchday7 {
 		if v.FirstTeam == t || v.SecondTeam == t {
-			fmt.Printf("* %s vs %s\n",
+			fmt.Printf("%s vs %s\n",
 				v.FirstTeam, v.SecondTeam)
 		} else {
 			continue
@@ -34,7 +37,7 @@ func TeamFixture(t string, m m.NextMatches) {
 	}
 	for _, v := range m.Matchday8 {
 		if v.FirstTeam == t || v.SecondTeam == t {
-			fmt.Printf("* %s vs %s\n",
+			fmt.Printf("%s vs %s\n",
 				v.FirstTeam, v.SecondTeam)
 		} else {
 			continue
@@ -49,7 +52,7 @@ func TeamFixture(t string, m m.NextMatches) {
 	}
 	for _, v := range m.Matchday9 {
 		if v.FirstTeam == t || v.SecondTeam == t {
-			fmt.Printf("* %s vs %s\n",
+			fmt.Printf("%s vs %s\n",
 				v.FirstTeam, v.SecondTeam)
 		} else {
 			continue
@@ -73,7 +76,7 @@ func ShowFixture(m m.NextMatches) {
 	// Print matches
 	for _, v := range m.Matchday7 {
 		// Teams
-		fmt.Printf("* %s vs %s\n",
+		fmt.Printf("%s vs %s\n",
 			v.FirstTeam, v.SecondTeam)
 	}
 
@@ -86,7 +89,7 @@ func ShowFixture(m m.NextMatches) {
 	// Print matches
 	for _, v := range m.Matchday8 {
 		// Teams
-		fmt.Printf("* %s vs %s\n",
+		fmt.Printf("%s vs %s\n",
 			v.FirstTeam, v.SecondTeam)
 	}
 
@@ -99,7 +102,7 @@ func ShowFixture(m m.NextMatches) {
 	// Print matches
 	for _, v := range m.Matchday9 {
 		// Teams
-		fmt.Printf("* %s vs %s\n",
+		fmt.Printf("%s vs %s\n",
 			v.FirstTeam, v.SecondTeam)
 	}
 
