@@ -6,10 +6,10 @@ Data taken from [CONMEBOL API](https://github.com/fcoagz/conmebol)
 ## Features
 
 * Show the current positions table
-* Show next mathces for all the teams 
+* Show next matches for all the teams 
 * Show previous matches for all the teams
-* See the next matches for a specified teams
-* See the previous matches for a specified teams
+* See the next matches for a specified team
+* See the previous matches for a specified team
 
 ## Installation
 
@@ -38,7 +38,7 @@ south-american-qualifiers-cli -table
 ![alt text](media/table.png)
 
 #### Specified Team Fixture
-Use `-fixture` and the the team name to see the fixture (case sensitive)
+Use `-fixture` and the team name to see the fixture (case sensitive)
 
 ```bash
 south-american-qualifiers-cli -fixture <<Team-Name>>
@@ -47,22 +47,13 @@ south-american-qualifiers-cli -fixture <<Team-Name>>
 ![alt text](media/fixture.png)
 
 #### Specified Team Previous Matches
-Use `-previous` and the the team name to see the previous mathces (case sensitive)
+Use `-previous` and the team name to see the previous matches (case sensitive)
 
 ```bash
 south-american-qualifiers-cli -previous <<Team-Name>>
 ```
 
 ![alt text](media/previous.png)
-
-#### Teams Fixture
-Use `-show-fixture` for showing the next matches
-
-```bash
-south-american-qualifiers-cli -show-fixture
-```
-
-![alt text](media/show-fixture.png)
 
 #### Teams Previous Matches
 `-show-previous` for showing the previous matches
@@ -72,4 +63,13 @@ south-american-qualifiers-cli -show-previous
 ```
 
 ![alt text](media/show-previous.png)
+
+#### Teams Fixture
+Use `-show-fixture` for showing the next matches
+
+```bash
+south-american-qualifiers-cli -show-fixture
+```
+
+![alt text](media/show-fixture.png)
 
