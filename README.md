@@ -1,6 +1,7 @@
 # South American Qualifiers CLI
 
 south-american-qualifiers-cli is a cli program to be aware of the qualifiers for the FIFA World Cup 2026 in South America, written in Go.
+Data taken from [CONMEBOL API](https://github.com/fcoagz/conmebol)
 
 ## Features
 
@@ -34,12 +35,16 @@ Use `-table` for showing the current positions table
 south-american-qualifiers-cli -table
 ```
 
+![alt text](media/table)
+
 #### Teams Fixture
 Use `-show-fixture` for showing the next matches
 
 ```bash
 south-american-qualifiers-cli -show-fixture
 ```
+
+![alt text](media/show-fixture)
 
 #### Teams Previous Matches
 `-show-previous` for showing the previous matches
@@ -48,6 +53,8 @@ south-american-qualifiers-cli -show-fixture
 south-american-qualifiers-cli -show-previous
 ```
 
+![alt text](media/show-previous)
+
 #### Specified Team Fixture
 Use `-fixture` and the the team name to see the fixture (case sensitive)
 
@@ -55,9 +62,14 @@ Use `-fixture` and the the team name to see the fixture (case sensitive)
 south-american-qualifiers-cli -fixture <<Team-Name>>
 ```
 
+![alt text](media/fixture)
+
 #### Specified Team Previous Matches
 Use `-previous` and the the team name to see the previous mathces (case sensitive)
 
 ```bash
 south-american-qualifiers-cli -previous <<Team-Name>>
 ```
+
+![alt text](media/previous)
+
