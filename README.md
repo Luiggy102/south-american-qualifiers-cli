@@ -35,7 +35,7 @@ Use `-table` for showing the current positions table
 south-american-qualifiers-cli -table
 ```
 
-![alt text](media/table)
+![alt text](media/table.png)
 
 #### Teams Fixture
 Use `-show-fixture` for showing the next matches
@@ -44,7 +44,7 @@ Use `-show-fixture` for showing the next matches
 south-american-qualifiers-cli -show-fixture
 ```
 
-![alt text](media/show-fixture)
+![alt text](media/show-fixture.png)
 
 #### Teams Previous Matches
 `-show-previous` for showing the previous matches
@@ -53,7 +53,7 @@ south-american-qualifiers-cli -show-fixture
 south-american-qualifiers-cli -show-previous
 ```
 
-![alt text](media/show-previous)
+![alt text](media/show-previous.png)
 
 #### Specified Team Fixture
 Use `-fixture` and the the team name to see the fixture (case sensitive)
@@ -62,7 +62,7 @@ Use `-fixture` and the the team name to see the fixture (case sensitive)
 south-american-qualifiers-cli -fixture <<Team-Name>>
 ```
 
-![alt text](media/fixture)
+![alt text](media/fixture.png)
 
 #### Specified Team Previous Matches
 Use `-previous` and the the team name to see the previous mathces (case sensitive)
@@ -71,5 +71,5 @@ Use `-previous` and the the team name to see the previous mathces (case sensitiv
 south-american-qualifiers-cli -previous <<Team-Name>>
 ```
 
-![alt text](media/previous)
+![alt text](media/previous.png)
 
