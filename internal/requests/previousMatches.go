@@ -5,8 +5,8 @@ import (
 	"io"
 	"net/http"
 
-	e "github.com/Luigy102/south-american-qualifiers-cli/internal/extras"
-	t "github.com/Luigy102/south-american-qualifiers-cli/types"
+	e "github.com/Luiggy102/south-american-qualifiers-cli/internal/extras"
+	t "github.com/Luiggy102/south-american-qualifiers-cli/types"
 )
 
 func PreviousMatches() t.PreviousMatches {

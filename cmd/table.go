@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	t "github.com/Luigy102/south-american-qualifiers-cli/types"
+	t "github.com/Luiggy102/south-american-qualifiers-cli/types"
 	"github.com/fatih/color"
 )
 
