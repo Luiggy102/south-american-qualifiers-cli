@@ -1,6 +1,6 @@
 module github.com/Luiggy102/south-american-qualifiers-cli
 
-go 1.22.0
+go 1.21.8
 
 require github.com/fatih/color v1.16.0
 
